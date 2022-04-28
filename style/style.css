@@ -1,0 +1,337 @@
+:root {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --text-1: #ECF0F1;
+    --bg-1: #202020;
+    --bg-2: #505050;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+}
+
+body {
+    color: #ECF0F1;
+    background-color: #505050;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+/* Menu lateral */
+
+.menu {
+    width: 5rem;
+    height: 100%;
+    position: fixed;
+    background-color: #202020;
+    transition: 0.05s ease;
+    z-index: 2;
+}
+
+.menu-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-item {
+ width: 100%;
+}
+
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #ECF0F1;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 0.3s;
+}
+
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #101010;
+    color: rgb(154, 48, 180);
+
+}
+
+.logo-text {
+    margin-left: 1rem;
+}
+
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    font-size: 30px;
+
+}
+
+
+.menu:hover {
+    width: 16rem;
+
+}
+
+.menu:hover .link-text {
+    display: block;
+}
+
+
+
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: #202020;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    
+}
+
+
+
+
+.icon {
+    transform: rotate(100%);
+    transition: transform 0.3s;
+}
+
+.menu:hover .icon{
+    transform: scale(150%)
+}
+
+
+/* header */
+header i {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+header i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 100vw;
+    height: 80px;
+    background-color: #202020;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.pesquisa input {
+    
+    height: 50%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.login {
+    position: absolute;
+    
+    
+}
+
+/* Pagina principal */
+
+main {
+    padding-top: 80px;
+    margin-left: 5rem;    
+    height: 89vh;
+    width: 100%;
+
+    
+}
+
+.jogo-principal {
+    font-size: 16px;
+
+    background: linear-gradient(to left, transparent, #202020), url('/img/capa1.jpg');
+    height: 880px;
+    background-position: center;
+    background-position-x: auto;
+    background-position-y: top;
+    
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.jogo-principal .titulo{
+    margin-left: 15%;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao1{
+    margin-left: 15%;
+}
+
+.botao1, .botao2{
+
+    background-color: #351c42;
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-style: bold;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 15px;
+    transform: scale(100%);
+}
+
+.botao1:hover{
+    background-color: white;
+    color: black;
+    transform: scale(110%);
+}
+
+.botao2:hover{
+    background-color: white;
+    color: black;
+    transform: scale(110%);
+}
+
+.botao1 i{
+    margin-right: 8px;
+}
+
+/* carrosel top jogos */
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #202020, transparent);
+}
+
+h2 a{
+    margin-left: 10%;
+    color: #ECF0F1;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    opacity: 0.7;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-1);
+    transition: 0.70s ease;
+    border-radius: 10px;
+}
+
+.info:hover {
+    position: fixed;
+    opacity: 0.95;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.info p {
+    font-weight: 600;
+    text-justify: auto;
+    margin: 6%;
+    font-size: 19px;
+}
+
+.botao-play {  
+    background-color: #351c42;
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-style: bold;
+
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 15px;
+    transform: scale(100%);
+}
+
+.botao-play:hover {
+
+    background-color: white;
+    color: black;
+    transform: scale(110%);
+}
+
+.box-top{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.carrosel-top{
+    position: relative;
+    bottom: 100px;
+    margin-left: 4.2vw;
+    margin-top: 5px;
+    z-index: 0;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+

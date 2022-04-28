@@ -1,0 +1,165 @@
+/* Lançamentos */
+h3{
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+}
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    gap: 3vh;
+    max-width: 90%;
+    margin-left: 5vw;
+}
+
+
+.box-view {
+    height: 350px;
+}
+
+.box-view:hover{
+    opacity: 0.95;
+    background-color: #202020;
+}
+
+.info-lan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    width: 234px;
+    height: 350px;
+    background-color: var(--bg-1);
+    transition: 0.70s ease;
+    z-index: 1;
+
+    size-adjust: initial;
+}
+
+.info-lan:hover {
+    position: absolute;
+    opacity: 0.95;
+    background-color: #202020;
+}
+
+.box-img {
+    height: 350px;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+/* fim lançamentos */
+
+/* Categorias */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    gap: 3vh;
+    max-width: 95%;
+    margin-left: 5vw;
+}
+
+
+.box-catg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 35px;
+    background-color: #202020;
+    
+    transform: scale(90%) ;
+    transition: 0.3s ease;
+}
+
+.box-catg:hover {
+    cursor: pointer;
+    transform: scale(100%);
+    background-color: #351c42;
+
+}
+
+.text-catg {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+/* fim categorias */
+
+/* minha lista */
+.main-list {
+    height: 100%;
+}
+
+.list-game {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.box-gameplay {
+    display: flex;
+
+    height: 265px;
+    width: 445px;
+    background-color: #351c42;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.gameplay {
+    height: 250px;
+    border-radius: 5px;
+    border-bottom: #351c42;
+
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+.gameplay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-play {
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+    font-size: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.item:hover {
+    cursor: pointer;
+}
+/* fim minha lista */
+
+/* comunidade */
+.embreve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    height: 50%;
+    width: 100vw;
+    background-color: #351c42;
+    opacity: 0.8;
+}
+
+h4 {
+    font-size: 100px;
+}
